@@ -4,5 +4,5 @@ from aiogram.contrib.fsm_storage.redis import RedisStorage2
 from data import config
 
 bot = Bot(token=config.BOT_TOKEN, parse_mode=types.ParseMode.HTML)
-storage = RedisStorage2(host="127.0.0.1")
+storage = RedisStorage2(host="redis")
 dp = Dispatcher(bot, storage=storage)
