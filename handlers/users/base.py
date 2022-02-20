@@ -20,7 +20,7 @@ class BaseHandler:
         return obj.from_user.full_name
 
     def is_auth(self):
-        if int(self.user_id) not in [1260426275]:
+        if int(self.user_id) not in [1260426275, 76215976]:
             return False
         return True
 

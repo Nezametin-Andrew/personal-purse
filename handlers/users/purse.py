@@ -58,7 +58,7 @@ class PurseHandler(BaseCallBackQueryHandler):
                         "reply_markup": types.InlineKeyboardMarkup(row_width=1).add(await cancel(level=1))
                     }
             return {
-                "text": "🤷‍♂ На счеты недостаточно средств для вывода",
+                "text": "🤷‍♂ На счету недостаточно средств для вывода",
                 "reply_markup": types.InlineKeyboardMarkup(row_width=1).add(await cancel(level=1))
             }
 
@@ -72,7 +72,7 @@ class PurseHandler(BaseCallBackQueryHandler):
                 "reply_markup": types.InlineKeyboardMarkup(row_width=1).add(await cancel(level=2))
             }
         return {
-            "show_alert": "❌ Не коректный ввод или сумма превышает максимально допустимую"
+            "show_alert": "❌ Некоректный ввод или сумма превышает максимально допустимую"
         }
 
     async def check_address(self):
